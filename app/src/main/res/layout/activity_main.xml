@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/ic_dropy" />
+    <ImageView
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:src="@drawable/ic_dropy" />
+    <ImageView
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_alignStart="@+id/chfeha"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="156dp"
+        android:src="@drawable/ic_dropy" />
+    <ImageView
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:src="@drawable/ic_dropy"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginRight="12dp"/>
+
+    <ImageView
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="66dp"
+        android:src="@drawable/ic_drop" />
+    <ImageView
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="17dp"
+        android:src="@drawable/ic_drop" />
+    <ImageView
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="209dp"
+        android:src="@drawable/ic_drop" />
+
+    <ImageView
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginBottom="249dp"
+        android:src="@drawable/ic_drop" />
+
+    <ImageView
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-164dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
+        android:src="@drawable/ic_drop" />
+
+    <ImageView
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="212dp"
+        android:layout_marginLeft="212dp"
+        android:layout_marginBottom="129dp"
+        android:src="@drawable/ic_drop" />
+
+    <ImageView
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="212dp"
+        android:src="@drawable/ic_drop" />
+    <ImageView
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="200dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_dropy" />
+
+    <ImageView
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="300dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ic_drop" />
+
+
+    <TextView
+        android:id="@+id/chfeha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-thin"
+        android:text="CHFEHA"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="100dp"
+        android:textColor="@android:color/white"
+        android:textSize="48sp" />
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:fontFamily="sans-serif-thin"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="MANUAL"
+                android:id="@+id/manual"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:fontFamily="sans-serif-thin"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:id="@+id/scan"
+                android:layout_marginLeft="24dp"
+                android:text="SCAN"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
