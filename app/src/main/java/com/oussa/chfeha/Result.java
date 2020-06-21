@@ -35,7 +35,7 @@ public class Result extends AppCompatActivity {
         RequestQueue queue = Volley.newRequestQueue(this);
 
         products.add(new Product(new String[]{"milk", "lait"}, 1020));
-        products.add(new Product(new String[]{"riz", "rice"}, 2497));
+        products.add(new Product(new String[]{"rice", "riz"}, 2497));
         products.add(new Product(new String[]{"harissa", "harissa"}, 7365));
         products.add(new Product(new String[]{"pasta", "pâtes"}, 1849));
         products.add(new Product(new String[]{"flour", "farine"}, 1849));
@@ -48,16 +48,16 @@ public class Result extends AppCompatActivity {
                 response -> {
                     try {
                         JSONObject reader = new JSONObject(response);
-                        JSONArray keywords = reader.getJSONObject("Product").getJSONArray("_keywords");
+                        JSONArray keywords = reader.getJSONObject("product").getJSONArray("_keywords");
                         if (keywords != null && keywords.length() > 0) {
                             for (Product product : products) {
                                 for (int i = 0; i < keywords.length(); i++) {
                                     if (keywords.getString(i).toLowerCase().equals(product.getNames()[0])
                                             || keywords.getString(i).toLowerCase().equals(product.getNames()[1])) {
                                         name.setText(product.getNames()[0]);
-                                        water.setText("It requires : " + String.valueOf(product.getWater()) +"l/kg"+ " of water to be produced");
+                                        water.setText("It requires : " + String.valueOf(product.getWater()) +" l/kg"+ " of water to be produced");
                                         bath.setText("That's equivalent to "+ String.valueOf(product.getWater()/80) +" bathtubs");
-                                        days.setText("That's equivalent to"+ String.valueOf(product.getWater()/302) +" days of water use");
+                                        days.setText("That's equivalent to "+ String.valueOf(product.getWater()/302) +" days of water use");
                                     }
                                 }
                             }
