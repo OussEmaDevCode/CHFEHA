@@ -22,3 +22,5 @@ Before you begin, you should have already downloaded the Android Studio SDK and 
 ## APK :
 
 https://drive.google.com/file/d/1rm8bvvUVcFtX6mTJHp79dhDVToCfbHXe/view?usp=sharing
+
+PS: all data is provided by A UNESCO-IHE report on water footprints of crops and normal products
